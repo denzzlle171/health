@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/health/static/css/main.964fdded.css",
+    "main.js": "/health/static/js/main.bd255439.js",
+    "static/js/787.faf4a038.chunk.js": "/health/static/js/787.faf4a038.chunk.js",
+    "static/media/activeGirl.svg": "/health/static/media/activeGirl.50dc57a9c4c61cb8178d796d67f29acd.svg",
+    "static/media/girl-4.svg": "/health/static/media/girl-4.859e3fb9a53673dbed0c0dc2ecf5fc6b.svg",
+    "static/media/girl-3.svg": "/health/static/media/girl-3.bb5cb84818938eac7b04b473d59c58c5.svg",
+    "static/media/girl-2.svg": "/health/static/media/girl-2.09c0b7c284102cc68527bdfbbe2a4195.svg",
+    "static/media/girl-1.svg": "/health/static/media/girl-1.4d2fa6bd54cdb6b7aa3d40aa26dd0c7e.svg",
+    "static/media/avocado.svg": "/health/static/media/avocado.a43bb7ebe54545d41fae4bf206af9028.svg",
+    "static/media/donat.svg": "/health/static/media/donat.30cda0d1b08336d41913b13f0c459092.svg",
+    "static/media/salt.svg": "/health/static/media/salt.5ecd6dc007229e9a49db0752ca752477.svg",
+    "static/media/chees.svg": "/health/static/media/chees.f79763f00a4e16148ff1650b241582a7.svg",
+    "static/media/cup.svg": "/health/static/media/cup.a92dfdf65138a0e40b79463cf4cc00ed.svg",
+    "static/media/pharmacy1.svg": "/health/static/media/pharmacy1.7f3f1c74c7596d90e7fa5f8e38cc5c76.svg",
+    "static/media/moon.svg": "/health/static/media/moon.e4ced75fd5e2d2f73ea8f91e2f5e33d5.svg",
+    "static/media/back.svg": "/health/static/media/back.92bc82518cc799b46e29d9c1b758de8e.svg",
+    "index.html": "/health/index.html",
+    "main.964fdded.css.map": "/health/static/css/main.964fdded.css.map",
+    "main.bd255439.js.map": "/health/static/js/main.bd255439.js.map",
+    "787.faf4a038.chunk.js.map": "/health/static/js/787.faf4a038.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.964fdded.css",
+    "static/js/main.bd255439.js"
+  ]
+}
