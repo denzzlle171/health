@@ -12,7 +12,7 @@ export const Title = styled.h1`
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
-  line-height: 36px; 
+  line-height: 36px;
   letter-spacing: 0.25px;
   margin: 0;
 `;
@@ -31,19 +31,18 @@ export const Describe = styled.p`
 `;
 
 export const Caption = styled.p`
-  color:  #2d3436;
+  color: #2d3436;
   text-align: center;
- 
+
   font-family: Inter;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
-  line-height: 24px; 
+  line-height: 24px;
   letter-spacing: 0.2px;
 `;
 
-export const ActionPanel = styled.div`
-`;
+export const ActionPanel = styled.div``;
 
 export const ActionContainer = styled.div`
   width: 360px;
@@ -61,10 +60,27 @@ export const ExerciseContainer = styled.div`
 export const ExerciseItembox = styled.div`
   display: flex;
   gap: 15px;
-  flex-direction:column
+  flex-direction: column;
 `;
 
 export const ImageActiv = styled.img`
   width: 173px;
   height: 363px;
+`;
+
+export const MainButton = styled.button`
+  width: 360px;
+  height: 50px;
+  color: #fff;
+  background-color: #5fcb39;
+  border-radius: 12px;
+  border: none;
+  opacity: 0.3;
+  cursor: pointer;
+  margin-top: 115px;
+
+  transition: opacity 0.2s linear;
+  &:hover {
+    opacity: 1;
+  }
 `;

@@ -14,8 +14,6 @@ import { ExerciseItem } from './../components/ExerciseItem';
 import { exerciseData } from './../dataContent';
 import activeGirl from './../images/activeGirl.svg';
 
-
-
 export const PhysicalExercise = () => {
   return (
     <PageContainer>

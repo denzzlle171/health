@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
+import DataContext from '../DataContext';
 
 const ItemBox = styled.div`
   display: flex;
@@ -14,22 +16,30 @@ const ItemBox = styled.div`
 `;
 
 const ButtonText = styled.p`
-  display:flex;
+  display: flex;
   color: #2d3436;
   font-family: Inter;
   font-size: 16.679px;
   font-style: normal;
   font-weight: 500;
   letter-spacing: 0.208px;
-  align-items:center;
+  align-items: center;
   text-align: left;
-  width :50%;
+  width: 50%;
   padding-left: 11px;
 `;
 
-export const GoalItem = ({item}) => {
+export const GoalItem = ({ item }) => {
+  const { updateData } = useContext(DataContext);
+  const navigate = useNavigate();
+
+  const handleButtonClick = (text) => {
+    updateData('Goal', item.text);
+    navigate('/measure-yourself');
+  };
+
   return (
-    <ItemBox>
+    <ItemBox type="button" onClick={() => handleButtonClick(item.text)}>
       <ButtonText> {item.text} </ButtonText>
       <img src={item.image} alt="icon girl" />
     </ItemBox>

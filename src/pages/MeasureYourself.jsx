@@ -1,11 +1,6 @@
 import React from 'react';
 import { Form } from './../components/Form';
-// import styled from 'styled-components';
-import {
-  PageContainer,
-  Title,
-  Describe,
-} from './StaledPages';
+import { PageContainer, Title, Describe } from './StaledPages';
 
 export const MeasureYourself = () => {
   return (
@@ -16,4 +11,3 @@ export const MeasureYourself = () => {
     </PageContainer>
   );
 };
-

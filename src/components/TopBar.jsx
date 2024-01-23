@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { useNavigate } from 'react-router-dom';
 import back from './../images/back.svg';
 import avocado from './../images/avocado.svg';
 
@@ -9,23 +10,23 @@ const TopBarContainer = styled.div`
   height: 33px;
   margin-top: 8px;
   margin-bottom: 24px;
+  cursor: pointer;
 `;
 
 const LogoBox = styled.div`
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 33px;
   height: 33px;
   background-color: #f4f4f4;
   border-radius: 6.543px;
-  margin-right:10px;
+  margin-right: 10px;
 `;
 
 const ImageLogo = styled.img`
   height: 24px;
   width: 18px;
-  
 `;
 
 const ImageChevron = styled.img`
@@ -43,10 +44,15 @@ const TitleText = styled.p`
   letter-spacing: -0.45px;
 `;
 
-
 export const TopBar = () => {
+  const navigate = useNavigate();
+
+  const handleBackClick = () => {
+    navigate(-1);
+  };
+
   return (
-    <TopBarContainer>
+    <TopBarContainer onClick={handleBackClick}>
       <ImageChevron src={back} alt="chevron left" />
       <LogoBox>
         <ImageLogo src={avocado} alt="logo" />

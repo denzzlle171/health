@@ -10,7 +10,6 @@ import {
 import { GoalItem } from './../components/GoalItem';
 import { goalData } from './../dataContent';
 
-
 export const Goal = () => {
   return (
     <PageContainer>
@@ -24,7 +23,7 @@ export const Goal = () => {
       <ActionPanel>
         <ActionContainer>
           {goalData.map((item) => (
-            <GoalItem item={item}  key={item.id}/>
+            <GoalItem item={item} key={item.id} />
           ))}
         </ActionContainer>
       </ActionPanel>

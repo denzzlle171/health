@@ -12,6 +12,11 @@ const ItemElement = styled.div`
   padding-left: 15px;
   padding-right: 24px;
   margin-bottom: 15px;
+  cursor: pointer;
+
+  &.selected {
+    border: 1px solid #5fcb39;
+  }
 `;
 
 const ButtonText = styled.p`
@@ -24,20 +29,35 @@ const ButtonText = styled.p`
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 18px; /* 150% */
+  line-height: 18px;
   letter-spacing: 0.3px;
   margin: 0;
-  text-align:left
+  text-align: left;
 `;
 
 const ButtonImg = styled.img`
-  height:30px;
+  height: 30px;
   width: 30px;
 `;
 
-export const DestructiveItem = ({item}) => {
+export const DestructiveItem = ({
+  item,
+  selectedKey,
+  setBehaviors,
+  setSelectedKey,
+}) => {
+  const isSelected = selectedKey === item.id;
+
+  const handleItemClick = () => {
+    setBehaviors(item.text);
+    setSelectedKey(item.id);
+  };
+
   return (
-    <ItemElement>
+    <ItemElement
+      className={isSelected ? 'selected' : ''}
+      onClick={handleItemClick}
+    >
       <ButtonImg src={item.image} alt="icon" />
       <ButtonText>{item.text} </ButtonText>
     </ItemElement>

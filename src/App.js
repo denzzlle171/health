@@ -7,6 +7,7 @@ import { Goal } from './pages/Goal';
 import { MeasureYourself } from './pages/MeasureYourself';
 import { DestructiveBehaviors } from './pages/DestructiveBehaviors';
 import { PhysicalExercise } from './pages/PhysicalExercise';
+import { Result } from './pages/Result';
 
 const AppWrapper = styled.div`
 width: 100%;
@@ -27,8 +28,8 @@ function App() {
           element={<DestructiveBehaviors />}
         />
         <Route path="/physical-exercise" element={<PhysicalExercise />} />
+        <Route path="/result" element={<Result />} />
       </Routes>
-
     </AppWrapper>
   );
 }
