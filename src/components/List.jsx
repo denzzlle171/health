@@ -25,11 +25,11 @@ export const List = () => {
  
   return (
     <ListSt>
-      <ListItem>{data.Goal}</ListItem>
+      <ListItem>{data.Goal || '-'}</ListItem>
       <ListItem>{`height: ${data.Measure.height}`}</ListItem>
       <ListItem>{`weight: ${data.Measure.weight}`}</ListItem>
-      <ListItem>{data.Behaviors}</ListItem>
-      <ListItem>{data.Exercise}</ListItem>
+      <ListItem>{data.Behaviors || '-'}</ListItem>
+      <ListItem>{data.Exercise || '-'}</ListItem>
     </ListSt>
   );
 };
